@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    container_name: "yum-repo-server"
+    image: yum-repo-server
+    ports:
+     - "8009:80"
+    volumes:
+     - ./rpm_packages:/var/www/html
